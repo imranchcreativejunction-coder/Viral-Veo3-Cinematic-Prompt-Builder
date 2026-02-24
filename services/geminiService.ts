@@ -68,7 +68,7 @@ Generate a valid Veo 3 JSON output with 2-3 shots. The JSON must conform to the 
 `;
 
         const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash",
+            model: "gemini-3-flash-preview",
             contents: jsonPrompt,
             config: {
                 responseMimeType: "application/json",
@@ -92,7 +92,7 @@ Transform the ad concept into a single, flowing cinematic narrative.
 `;
 
         const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash",
+            model: "gemini-3-flash-preview",
             contents: paragraphPrompt
         });
         
